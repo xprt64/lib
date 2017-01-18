@@ -12,8 +12,8 @@ class StringRebaser
     private $toBase = '';
 
     /**
-     * @param string $fromBase
      * @param string $toBase
+     * @param string $fromBase
      */
     public function __construct($fromBase, $toBase)
     {
