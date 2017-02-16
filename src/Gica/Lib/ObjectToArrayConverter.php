@@ -6,7 +6,7 @@
 namespace Gica\Lib;
 
 
-class ObjectToJsonConverter
+class ObjectToArrayConverter
 {
     public function serializeObject($object)
     {

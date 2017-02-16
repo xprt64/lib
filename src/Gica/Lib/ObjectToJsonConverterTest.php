@@ -6,14 +6,14 @@
 namespace tests\unit\Gica\Cqrs;
 
 
-use Gica\Lib\ObjectToJsonConverter;
+use Gica\Lib\ObjectToArrayConverter;
 
 class ObjectToJsonConverterTest extends \PHPUnit_Framework_TestCase
 {
 
     public function test()
     {
-        $serializer = new ObjectToJsonConverter();
+        $serializer = new ObjectToArrayConverter();
 
         $event = new MyEvent('xxx', 2);
 
@@ -28,7 +28,7 @@ class ObjectToJsonConverterTest extends \PHPUnit_Framework_TestCase
 
     public function test2()
     {
-        $serializer = new ObjectToJsonConverter();
+        $serializer = new ObjectToArrayConverter();
 
         $event = new MyDeepEvent(new MyEvent('xxx', 2), 4);
 
