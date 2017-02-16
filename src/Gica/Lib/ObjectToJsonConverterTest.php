@@ -22,7 +22,7 @@ class ObjectToJsonConverterTest extends \PHPUnit_Framework_TestCase
             'b' => 2,
         ];
 
-        $this->assertEquals($expected, $serializer->serializeObject($event));
+        $this->assertEquals($expected, $serializer->convert($event));
 
     }
 
@@ -40,7 +40,7 @@ class ObjectToJsonConverterTest extends \PHPUnit_Framework_TestCase
             'd' => 4,
         ];
 
-        $this->assertEquals($expected, $serializer->serializeObject($event));
+        $this->assertEquals($expected, $serializer->convert($event));
 
     }
 }

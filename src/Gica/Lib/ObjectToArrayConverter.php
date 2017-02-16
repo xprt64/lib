@@ -8,7 +8,7 @@ namespace Gica\Lib;
 
 class ObjectToArrayConverter
 {
-    public function serializeObject($object)
+    public function convert($object)
     {
         $result = $this->extractObjectProperties($object);
 
